@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/pt-sans-caption-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-sans-caption-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +17,23 @@
         <div class="container">
             <h1>Счетчик калорий</h1>
             <div class="programm">
-                
-                <h2>Пол</h2>
-                <ul class="switcher">
-                    <li>
-                        <input id="gender-male" name="gender" value="male" type="radio" checked required>
-                        <label for="gender-male">
-                            Мужчина
-                        </label>
-                    </li>
-                    <li>
-                        <input id="gender-female" name="gender" value="female" type="radio" required>
-                        <label for="gender-female">
-                            Женщина
-                        </label>
-                    </li>
-                </ul>
+                <div class="programm_inner">
+                    <h2>Пол</h2>
+                    <ul class="switcher">
+                        <li>
+                            <input id="gender-male" name="gender" value="male" type="radio" checked required>
+                            <label for="gender-male">
+                                Мужчина
+                            </label>
+                        </li>
+                        <li>
+                            <input id="gender-female" name="gender" value="female" type="radio" required>
+                            <label for="gender-female">
+                                Женщина
+                            </label>
+                        </li>
+                    </ul>
+                </div>
                 <div class="inputs_group">
                     <div class="input">
                         <div class="input_heading">

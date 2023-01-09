@@ -29,6 +29,7 @@ main {
 
 h2 {
     margin: 0;
+    margin-bottom: 16px;
     font-family: "PT Sans Caption", "Arial", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -40,6 +41,10 @@ h2 {
     background: white;
     padding: 40px 32px;    
     border-radius: 16px;
+}
+
+.programm_inner {
+    margin-bottom: 40px;
 }
 
 .switcher {
@@ -56,6 +61,10 @@ h2 {
     list-style: none;
 }
 
+.switcher li {
+    width: 100%;
+}
+
 .switcher li label {
     position: relative;
     z-index: 2;
@@ -64,15 +73,19 @@ h2 {
     align-items: center;
     text-align: center;
     padding: 14px;
-    color: var(--color-text-black);
+    color: black;
     user-select: none;
     cursor: pointer;
     border: solid 0.5px #fd7d36; 
 }
 
-.switcher__item input[type="radio"]:checked + label {
+.switcher li input[type="radio"] {
+    display: none;
+}
+
+.switcher li input[type="radio"]:checked + label {
     z-index: 0;
-    color: var(--color-text-white);
+    color: white;
     border-color: transparent;
     background-color: #fd7d36;
 }
